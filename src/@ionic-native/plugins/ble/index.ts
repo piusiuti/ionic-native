@@ -338,6 +338,12 @@ export class BLE extends IonicNativePlugin {
     return;
   }
 
+  @Cordova()
+  requestConnectionPriority(deviceId: string, priority: string): Promise<any> {
+    return;
+  }
+
+  
   /**
    * Refresh Device Cache
    * This method may fix a issue of old cached services and characteristics.
