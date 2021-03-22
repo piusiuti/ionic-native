@@ -338,12 +338,6 @@ export class BLE extends IonicNativePlugin {
     return;
   }
 
-  @Cordova()
-  requestConnectionPriority(deviceId: string, priority: string): Promise<any> {
-    return;
-  }
-
-  
   /**
    * Refresh Device Cache
    * This method may fix a issue of old cached services and characteristics.
@@ -622,6 +616,17 @@ export class BLE extends IonicNativePlugin {
    */
   @Cordova()
   isLocationEnabled(): Promise<void> {
+    return;
+  }
+  
+  /**
+   * When Connecting to a peripheral android can request for the connection priority for better communication.
+   * @param deviceId UUID or MAC address of the peripheral
+   * @param connectionPriority high or balanced or low
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  requestConnectionPriority(deviceId: string, connectionPriority: string): Promise<any> {
     return;
   }
 }
